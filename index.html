@@ -3,56 +3,122 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
+  <meta name="description" content="Jerry Yue's learning portfolio: weekly reflections on data, media and communication.">
+  <title>Jerry's Learning Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
- <h2>My studies</h2>
-  <ul>
-    <li>COMM5020M: Data in Action: Methods, Analysis, and Visualisation</li>
-  </ul>
-<body>
-  <h1>Welcome to Jerry's Portfolio</h1>
-  <p>I'll do my best to complete these tasks and continue improving.</p>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <h2>About Me</h2>
-  <p>I will use this website to share my work and reflections.</p>
-<h2>Week 2 Reflection</h2>
-<p>This week, I followed the teacher's guide and created a basic website using Visual Studio Code. I created a stylesheet using CSS, uploaded the website files to GitHub, and then used GitHub Pages to publish my portfolio website.</p>
-<p>Using the software was not as difficult as I had expected. However, the biggest obstacle for me was English. I found it difficult to follow the teacher's explanations, and I sometimes struggled to understand technical terms. As a result, I need to spend more time studying after class. Although this is challenging, I think I can manage it.</p>
-<p>Through this practical activity, I began to understand the basic structure of a website. I realised that the content and structure, visual style, and publishing of a website are separate parts of the process. CampusPress is a convenient content management system with ready-made themes and visual tools. By contrast, using Visual Studio Code to edit HTML and CSS gives me more freedom and control over details. I chose VS Code because I want to improve my web development skills.</p>
-<h2>Week 3 Reflection: Web Scraping</h2>
-<p>This week’s classroom exercise gave me my first opportunity to fully attempt using a web scraper to extract programme titles from the BBC iPlayer homepage. I began by selecting the recurring programme cards, then configured the title selector, and finally ran the scraper, resulting in a data table containing 10 programme titles.</p>
+  <!-- 顶部导航：两个页面共用相同的链接。 -->
+  <header class="site-header container">
+    <a class="site-name" href="index.html">Jerry Yue</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="reflections.html">Reflections</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
 
-<p>In the process, I realised that web scraping is not simply a matter of copying the text visible on the screen, but rather involves identifying elements within the webpage’s code and instructing the tool where to extract the information from. Initially, the preview results were blank. It was only after I checked and adjusted the selector that I successfully extracted the titles.</p>
+  <main id="main" class="container">
+    <!-- 首页介绍：标题、简介和 Jerry 图片。 -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">COMM5020M · Learning journal</p>
+        <h1 id="hero-title">Jerry's Learning<br>Portfolio</h1>
+        <p class="hero-description">Exploring data, media and communication through weekly practice and reflection.</p>
+        <a class="button" href="#weekly-reflections">Explore my reflections <span aria-hidden="true">↗</span></a>
+      </div>
+      <img class="hero-character" src="images/jerry-notebook.png" alt="Jerry the cartoon mouse smiling with a notebook and pencil." width="1178" height="1335" fetchpriority="high">
+    </section>
 
-<p>This exercise presented a certain degree of difficulty for me, but the main challenge remained at the language level. I intend to continue practising my English after class and will also use the workshop materials uploaded by the tutor for further practice.</p>
-<figure>
-  <img src="images/web-scraper-results.png"
-     alt="Web scraping results showing 10 programme titles"
-     style="display: block; width: 100%; max-width: 700px; height: auto; margin: 20px auto;">
-  <figcaption>Screenshot of the 10 programme titles scraped from the BBC iPlayer homepage.</figcaption>
-</figure>
-<h2>Week 4 Reflection: Data Collection</h2>
-<p>At last week’s workshop, the tutor guided us through a step-by-step discussion of the purpose, ethics, sources, gaps and methods of data collection, placing particular emphasis on ethical issues. Our group chose Scenario 1, which aims to help the Faculty of Arts and Humanities understand how students use generative AI.</p>
+    <!-- 新增一周：复制下面一个 article，再修改周次、摘要和链接。 -->
+    <section id="weekly-reflections" class="weekly-section" aria-labelledby="weekly-title">
+      <div class="section-heading">
+        <h2 id="weekly-title">Weekly reflections</h2>
+        <p>What I made, what challenged me, and what I learned.</p>
+      </div>
 
-<p>I was responsible for collecting data on which AI tools students use. As students’ discussions on social media about using AI to complete assignments may raise issues of academic integrity, I did not use web scraping but instead compiled data from publicly available survey reports. I found that there is not a great deal of such data, and there is a particular lack of data on Chinese students’ use of Chinese AI tools: surveys from the UK and the US do not mention DeepSeek or Doubao, whilst the Chinese data do not specifically target international students.</p>
+      <div class="reflection-grid">
+        <article class="reflection-card">
+          <div class="card-preview code-preview" aria-hidden="true">
+            <span class="preview-caption">index.html</span>
+            <pre><code><span class="code-muted">&lt;!doctype html&gt;</span>
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Portfolio&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to Jerry's Portfolio&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </div>
+          <p class="week-label">Week 02</p>
+          <h3><a href="reflections.html#week-2">Building my first website</a></h3>
+          <p>Creating a portfolio with HTML, CSS and GitHub Pages.</p>
+          <a class="text-link" href="reflections.html#week-2">Read reflection <span aria-hidden="true">→</span><span class="visually-hidden"> for Week 2</span></a>
+        </article>
 
-<p>When categorising the data, I listed only five mainstream tools separately, grouping the rest under ‘Other’, as there was too little data on niche tools for them to be of much value. I also learnt how to convert text into numerical codes to facilitate subsequent statistical analysis.</p>
+        <article class="reflection-card">
+          <div class="card-preview image-preview">
+            <img class="scraper-preview" src="images/web-scraper-results.png" alt="BBC iPlayer web scraping exercise and programme title results." width="1280" height="1019" loading="lazy">
+          </div>
+          <p class="week-label">Week 03</p>
+          <h3><a href="reflections.html#week-3">Collecting data with web scraping</a></h3>
+          <p>Extracting programme titles and learning how selectors work.</p>
+          <a class="text-link" href="reflections.html#week-3">Read reflection <span aria-hidden="true">→</span><span class="visually-hidden"> for Week 3</span></a>
+        </article>
 
-<p>This has given me a better understanding of how data is categorised and labelled.</p>
-<h2>Week 5 Reflection: Data Visualisation</h2>
-<p>This week's workshop focused on data visualisation. In the first part, our group looked back at how we had collected our data the week before and discussed the difficulties with the tutor, mainly privacy and ethics. Data on students' use of AI often involves personal information and academic integrity, so we could only use published, aggregated data.</p>
+        <article class="reflection-card">
+          <div class="card-preview ethics-preview" aria-hidden="true">
+            <span class="preview-caption">A closer look at data</span>
+            <p>Data collection<br><em>&amp; ethics</em></p>
+            <span class="ethics-topics">Privacy. Sources. Categories.</span>
+          </div>
+          <p class="week-label">Week 04</p>
+          <h3><a href="reflections.html#week-4">Data collection and ethics</a></h3>
+          <p>Considering privacy, missing data and the choices behind categories.</p>
+          <a class="text-link" href="reflections.html#week-4">Read reflection <span aria-hidden="true">→</span><span class="visually-hidden"> for Week 4</span></a>
+        </article>
 
-<p>In the second part, the tutor asked us to try making a pie chart in Excel. I managed to make one, but soon realised that our data was not suitable for a pie chart. A pie chart shows how a whole is divided into parts, but in the surveys students could use more than one AI tool, so the percentages for all the tools add up to more than 100%. The pie chart was therefore only practice, and a bar chart would suit this kind of data better.</p>
+        <article class="reflection-card">
+          <div class="card-preview image-preview survey-preview">
+            <img src="images/AI%20data%20survey.png" alt="Comparison table of AI tool usage reported by five survey sources." width="980" height="286" loading="lazy">
+          </div>
+          <p class="week-label">Week 05</p>
+          <h3><a href="reflections.html#week-5">Choosing the right visualisation</a></h3>
+          <p>Reflecting on chart choices, multiple responses and comparisons across sources.</p>
+          <a class="text-link" href="reflections.html#week-5">Read reflection <span aria-hidden="true">→</span><span class="visually-hidden"> for Week 5</span></a>
+        </article>
+        <article class="reflection-card">
+          <div class="card-preview image-preview ad-preview">
+            <img src="images/douyin-ad-categories.jpg" alt="Advertising categories shown in Douyin's ad settings." width="1200" height="2670" loading="lazy">
+          </div>
+          <p class="week-label">Week 06</p>
+          <h3><a href="reflections.html#week-6">Data, classification and algorithmic identity</a></h3>
+          <p>Reflecting on Douyin's advertising categories, classifying friends' posts and who defines our digital identities.</p>
+          <a class="text-link" href="reflections.html#week-6">Read reflection <span aria-hidden="true">→</span><span class="visually-hidden"> for Week 6</span></a>
+        </article>
+      </div>
+    </section>
 
-<p>I also realised that putting data from different sources in one chart could mislead readers. Each survey asked different people in different ways, so placing the numbers side by side suggests that they can be compared directly. If they are shown together, they need to be grouped by source, with a note on who each survey asked.</p>
+    <section id="about" class="about-section" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">About this portfolio</p>
+        <h2 id="about-title">Learning, one week<br>at a time.</h2>
+      </div>
+      <div class="about-copy">
+        <p>I will use this website to share my work and reflections.</p>
+        <p>I'm building this portfolio with HTML and CSS to develop my web development skills, alongside my studies in data, media and communication.</p>
+        <p class="course-name">COMM5020M: Data in Action: Methods, Analysis, and Visualisation</p>
+      </div>
+    </section>
+  </main>
 
-<p>My main takeaway this week is that, before making a chart, I need to think about who the audience is and what they need to learn from it. Charts are not neutral: the choice of chart and the way the data is arranged both shape the conclusions readers draw.</p>
-<figure>
-  <img src="images/AI%20data%20survey.png"
-    alt="Table of AI tool usage rates reported by five sources, with blank cells where a source did not report a tool"
-    style="display: block; width: 100%; max-width: 700px; height: auto; margin: 20px auto;">
-  <figcaption>Usage rates (%) of AI tools reported by five sources. Shaded cells show tools that a source did not report.</figcaption>
-</figure>
+  <footer class="site-footer container">
+    <span>Jerry Yue</span>
+    <span>COMM5020M · University of Leeds</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
 </body>
 </html>
