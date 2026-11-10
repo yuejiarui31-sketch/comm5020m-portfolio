@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jerry Yue's weekly learning reflections on website building, web scraping, data collection and visualisation.">
+  <title>Weekly Reflections | Jerry's Learning Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="site-name" href="index.html">Jerry Yue</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="reflections.html" aria-current="page">Reflections</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-intro">
+      <p class="eyebrow">COMM5020M · Learning journal</p>
+      <h1>Weekly reflections</h1>
+      <p>A record of my classroom practice, the challenges I encountered, and what I learned along the way.</p>
+    </header>
+
+    <div class="reading-layout">
+      <!-- 新增一周时，在这里补上对应的目录链接。 -->
+      <nav class="week-nav" aria-label="Weekly reflections">
+        <p class="eyebrow">On this page</p>
+        <a href="#week-2">02 · Building a website</a>
+        <a href="#week-3">03 · Web scraping</a>
+        <a href="#week-4">04 · Data collection</a>
+        <a href="#week-5">05 · Visualisation</a>
+        <a href="#week-6">06 · Classification</a>
+      </nav>
+
+      <div>
+        <!-- 第2周：修改下面的段落即可更新反思。 -->
+        <article id="week-2" class="reflection-entry" aria-labelledby="week-2-title">
+          <p class="week-label">Week 02</p>
+          <h2 id="week-2-title">Creating and hosting a website</h2>
+          <p>This week, I followed the teacher's guide and created a basic website using Visual Studio Code. I created a stylesheet using CSS, uploaded the website files to GitHub, and then used GitHub Pages to publish my portfolio website.</p>
+          <p>Using the software was not as difficult as I had expected. However, the biggest obstacle for me was English. I found it difficult to follow the teacher's explanations, and I sometimes struggled to understand technical terms. As a result, I need to spend more time studying after class. Although this is challenging, I think I can manage it.</p>
+          <p>Through this practical activity, I began to understand the basic structure of a website. I realised that the content and structure, visual style, and publishing of a website are separate parts of the process. CampusPress is a convenient content management system with ready-made themes and visual tools. By contrast, using Visual Studio Code to edit HTML and CSS gives me more freedom and control over details. I chose VS Code because I want to improve my web development skills.</p>
+        </article>
+
+        <!-- 第3周：修改下面的段落即可更新反思。 -->
+        <article id="week-3" class="reflection-entry" aria-labelledby="week-3-title">
+          <p class="week-label">Week 03</p>
+          <h2 id="week-3-title">Web Scraping</h2>
+          <p>This week’s classroom exercise gave me my first opportunity to fully attempt using a web scraper to extract programme titles from the BBC iPlayer homepage. I began by selecting the recurring programme cards, then configured the title selector, and finally ran the scraper, resulting in a data table containing 10 programme titles.</p>
+          <p>In the process, I realised that web scraping is not simply a matter of copying the text visible on the screen, but rather involves identifying elements within the webpage’s code and instructing the tool where to extract the information from. Initially, the preview results were blank. It was only after I checked and adjusted the selector that I successfully extracted the titles.</p>
+          <p>This exercise presented a certain degree of difficulty for me, but the main challenge remained at the language level. I intend to continue practising my English after class and will also use the workshop materials uploaded by the tutor for further practice.</p>
+          <figure>
+  <a href="images/web-scraper-results.png" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab"><img src="images/web-scraper-results.png" alt="Web scraping results showing 10 programme titles" loading="lazy" width="1280" height="1019"></a><figcaption>Screenshot of the 10 programme titles scraped from the BBC iPlayer homepage.<span class="image-hint">Click the image to view it full size in a new tab.</span></figcaption>
+</figure>
+        </article>
+
+        <!-- 第4周：修改下面的段落即可更新反思。 -->
+        <article id="week-4" class="reflection-entry" aria-labelledby="week-4-title">
+          <p class="week-label">Week 04</p>
+          <h2 id="week-4-title">Data Collection</h2>
+          <p>At last week’s workshop, the tutor guided us through a step-by-step discussion of the purpose, ethics, sources, gaps and methods of data collection, placing particular emphasis on ethical issues. Our group chose Scenario 1, which aims to help the Faculty of Arts and Humanities understand how students use generative AI.</p>
+          <p>I was responsible for collecting data on which AI tools students use. As students’ discussions on social media about using AI to complete assignments may raise issues of academic integrity, I did not use web scraping but instead compiled data from publicly available survey reports. I found that there is not a great deal of such data, and there is a particular lack of data on Chinese students’ use of Chinese AI tools: surveys from the UK and the US do not mention DeepSeek or Doubao, whilst the Chinese data do not specifically target international students.</p>
+          <p>When categorising the data, I listed only five mainstream tools separately, grouping the rest under ‘Other’, as there was too little data on niche tools for them to be of much value. I also learnt how to convert text into numerical codes to facilitate subsequent statistical analysis.</p>
+          <p>This has given me a better understanding of how data is categorised and labelled.</p>
+        </article>
+
+        <!-- 第5周：修改下面的段落即可更新反思。 -->
+        <article id="week-5" class="reflection-entry" aria-labelledby="week-5-title">
+          <p class="week-label">Week 05</p>
+          <h2 id="week-5-title">Data Visualisation</h2>
+          <p>This week's workshop focused on data visualisation. In the first part, our group looked back at how we had collected our data the week before and discussed the difficulties with the tutor, mainly privacy and ethics. Data on students' use of AI often involves personal information and academic integrity, so we could only use published, aggregated data.</p>
+          <p>In the second part, the tutor asked us to try making a pie chart in Excel. I managed to make one, but soon realised that our data was not suitable for a pie chart. A pie chart shows how a whole is divided into parts, but in the surveys students could use more than one AI tool, so the percentages for all the tools add up to more than 100%. The pie chart was therefore only practice, and a bar chart would suit this kind of data better.</p>
+          <p>I also realised that putting data from different sources in one chart could mislead readers. Each survey asked different people in different ways, so placing the numbers side by side suggests that they can be compared directly. If they are shown together, they need to be grouped by source, with a note on who each survey asked.</p>
+          <p>My main takeaway this week is that, before making a chart, I need to think about who the audience is and what they need to learn from it. Charts are not neutral: the choice of chart and the way the data is arranged both shape the conclusions readers draw.</p>
+          <figure>
+  <a href="images/AI%20data%20survey.png" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab"><img src="images/AI%20data%20survey.png" alt="Table of AI tool usage rates reported by five sources, with blank cells where a source did not report a tool" loading="lazy" width="980" height="286"></a><figcaption>Usage rates (%) of AI tools reported by five sources. Shaded cells show tools that a source did not report.<span class="image-hint">Click the image to view it full size in a new tab.</span></figcaption>
+</figure>
+        </article>
+        <!-- 第6周：修改下面的段落即可更新反思。 -->
+        <article id="week-6" class="reflection-entry" aria-labelledby="week-6-title">
+          <p class="week-label">Week 06</p>
+          <h2 id="week-6-title">Data, Classification and Algorithmic Identity</h2>
+          <p>This week, we looked at what data the platform has collected about us, examined how the platform categorises us, and then categorised our friends using Sumpter’s (2018) method.</p>
+          <p>I chose Douyin (the Chinese version of TikTok). I found that, on the one hand, the access points for this information were difficult to locate; on the other hand, the privacy policy was convoluted and hard to understand. The policy mentioned that ‘predictive preference features’ would be generated based on my usage data for content recommendations, but even after reading it, I was still unclear as to exactly what data was being collected or what labels had been assigned to me. To be honest, I do not place much trust in this privacy policy either, as I am concerned that the platform might say one thing and do another.</p>
+          <p>In the ad settings, I saw the ad categories Douyin had listed for me, including lifestyle services, travel and accommodation, gaming, education and training, e-commerce, home renovation, property and motoring. I felt that these categories also served as interest tags for video recommendations, and I did indeed find myself seeing more adverts in these categories whilst scrolling. These tags seemed more like classifications used by the advertising industry than a description of me as an individual. The page allowed me to opt out of categories I wasn’t interested in, but it also stated that the number of adverts I saw would remain unchanged after doing so. I can only adjust a very small portion of this; I still cannot see exactly how the platform categorises me.</p>
+
+          <figure class="phone-figure">
+            <a class="phone-screenshot" href="images/douyin-ad-categories.jpg" target="_blank" rel="noopener" aria-label="Open the original Douyin ad settings screenshot in a new tab">
+              <img src="images/douyin-ad-categories.jpg" alt="Douyin's ad settings list advertising categories and state that turning off a category will not change the number of ads shown." width="1200" height="2670" loading="lazy">
+            </a>
+            <figcaption><em>Figure 1. Ad categories Douyin listed for me (ad settings page, 10 Nov 2026). The text at the top says that turning off a category will not change the number of ads I see.</em><span class="image-hint">Click the image to open the original screenshot in a new tab.</span></figcaption>
+          </figure>
+
+          <p>Subsequently, I manually categorised the 15 most recent posts from 32 mutual Douyin friends, totalling 478 videos. My main impression was that many videos were difficult to fit into the 13 given categories. Videos filmed by friends in China on Douyin differ from the content types commonly seen abroad. For example, should a selfie taken outdoors be classified as ‘Outdoors’ or ‘Lifestyle’? I couldn’t find a suitable category for food videos either. I had to set my own rules, so the results depended largely on my own judgement. Lifestyle (36%) and Outdoors (20%) were the largest categories, while politics and news had no posts at all. However, this does not mean my friends have no views on these topics; it only shows that they do not post about them publicly on Douyin.</p>
+          <p>This reminded me of the concept of ‘algorithmic identity’ proposed by Cheney-Lippold (2017): platforms use data to sort us into categories they have defined, and then push content based on those categories. The advertising categories Douyin presents to me and the classifications I applied to my friends’ videos are, in fact, the same process: using categories designed by others to generalise a person. Those being categorised cannot see how these categories are derived, nor can they easily change them. My main takeaway this week is that categorisation is never neutral: who designs the categories, and for what purpose, shapes how a person is seen.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer container">
+    <span>Jerry Yue</span>
+    <span>COMM5020M · University of Leeds</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
