@@ -100,6 +100,11 @@ p { margin: 0 0 1em; }
 .reflection-entry .phone-screenshot { width: min(100%, 360px); aspect-ratio: 1200 / 2405; margin-inline: auto; overflow: hidden; outline: 1px solid var(--line); border-radius: 3px; }
 .reflection-entry .phone-screenshot img { width: 100%; max-width: none; height: auto; border: 0; border-radius: 0; transform: translateY(-4.4944%); }
 
+/* 第8周：四张现场照片两列排列，手机上变为一列。 */
+.field-photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 30px 0; }
+.reflection-entry .field-photo-grid figure { margin: 0; min-width: 0; }
+.reflection-entry .tactile-map-figure { margin-bottom: 30px; }
+
 /* 7. 平板和手机。 */
 @media (max-width: 900px) {
   .hero { gap: 25px; }
@@ -118,7 +123,7 @@ p { margin: 0 0 1em; }
   .hero h1 { font-size: clamp(2.7rem, 10vw, 3.7rem); }
   .hero-description { font-size: 1.05rem; }
   .hero-character { width: 215px; max-height: 270px; }
-  .reflection-grid, .about-section, .reading-layout { grid-template-columns: 1fr; }
+  .reflection-grid, .about-section, .reading-layout, .field-photo-grid { grid-template-columns: 1fr; }
   .reflection-grid { gap: 38px; }
   .card-preview { height: 225px; }
   .weekly-section { padding-block: 35px 45px; }
